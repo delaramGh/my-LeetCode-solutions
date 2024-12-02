@@ -6,7 +6,6 @@ public:
         for(int i=0; i<s.size(); i++)
         {   
             int temp = int(s[i]) - 64;
-            cout << s[i] << ", " << temp << endl;
             ans += temp * pow(26, s.size()-1-i);
         }
         return ans;
